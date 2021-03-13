@@ -1,0 +1,35 @@
+﻿<Window x:Class="ChessGame.PromotionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChessGame"
+        mc:Ignorable="d"
+        Title="Promotion Window"
+        SizeToContent="WidthAndHeight">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Button Name="QueenButton" Height="200" Width="200" Click="PromotionButtonClick">
+            <Image Source="pack://application:,,,/textures/Chess_qlt60.png"/>
+        </Button>
+
+        <Button Name="RookButton" Grid.Column="1" Height="200" Width="200" Click="PromotionButtonClick">
+            <Image Source="pack://application:,,,/textures/Chess_rlt60.png"/>
+        </Button>
+
+        <Button Name="BishopButton" Grid.Column="2" Height="200" Width="200" Click="PromotionButtonClick">
+            <Image Source="pack://application:,,,/textures/Chess_blt60.png"/>
+        </Button>
+
+        <Button Name="KnightButton" Grid.Column="3" Height="200" Width="200" Click="PromotionButtonClick">
+            <Image Source="pack://application:,,,/textures/Chess_nlt60.png"/>
+        </Button>
+
+    </Grid>
+</Window>
